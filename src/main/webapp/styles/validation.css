@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* # estilos para los mensajes
+============================================*/
+.warning {
+color: red;
+}
+.success {
+color: green;
+}
+.valid {
+color: green;
+}
