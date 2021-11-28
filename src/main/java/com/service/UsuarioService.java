@@ -23,7 +23,7 @@ public class UsuarioService {
 		Conexion conexion = new Conexion();
 		Connection conn = conexion.establishConnection().getCon();
 		
-		String sql = "SELECT name FROM user WHERE";
+		String sql = "SELECT name FROM tw.user WHERE";
 		sql += " user = ? AND password = ?";
 		PreparedStatement ps = conn.prepareStatement(sql);
 		ps.setString(1, usuario.getUser());

@@ -26,15 +26,6 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		this.user = user;
 	}
 
-	/*	public String execute() {
-		if ("scott".equals(user.getUser()) && "navy".equals(user.getPassword())) {
-			session.put("loggedUser", user);
-			return "success";					
-		} else {
-			addActionError("Usuario invalido favor de verificar");
-			return "input";
-		}
-}*/
 	
 	public String execute() throws SQLException {
 		String ret = INPUT;
