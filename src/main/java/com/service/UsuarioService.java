@@ -39,4 +39,22 @@ public class UsuarioService {
 		conexion.closeConnection();
 		return usuario;
 	}
+	
+	public Usuario altaUsuario() throws SQLException {
+		Conexion conexion = new Conexion();
+		Connection conn = conexion.establishConnection().getCon();
+		
+		String sql = "INSERT INTO user (user, password, name, email) VALUES (?,?,?,?)";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setString(1, usuario.getUser());
+		ps.setString(2, usuario.getPassword());
+		ps.setString(3, usuario.getName());
+		ps.setString(4, usuario.getEmail());
+		
+		ps.executeUpdate();
+		
+		conexion.closeConnection();
+		return usuario;
+	}
+	
 }

@@ -33,11 +33,15 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 		       </div>
 		       <div class="d-grid gap-2">
 		    	 <s:submit value="Login" cssClass="btn btn-primary"></s:submit>
-		    	 <s:submit value="Register" cssClass="btn btn-primary"></s:submit>
+		    	 <s:url var="Register" action="AltaUsuarioAction">
+				</s:url>
+				<s:a href="%{Register}" cssClass="btn btn-primary">Register</s:a>
 		       </div> 
 		       
 	    	</div>
 	    </s:form>
+	    
     </div>
+    
 </body>
 </html>
