@@ -66,6 +66,7 @@
      <img src="images/imagen3.png" class="img-fluid" alt="Responsive image">
      <img src="images/imagen2.png" class="img-fluid" alt="Responsive image">
      <img src="images/imagen1.png" class="img-fluid" alt="Responsive image">
+     <!-- holi -->
     </div>
    
   </div>

@@ -7,8 +7,8 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.model.Usuario;
 import com.opensymphony.xwork2.ActionSupport;
-//import com.service.UsuarioService;
-//import com.utils.Conexion;
+import com.service.UsuarioService;
+import com.utils.Conexion;
 
 public class LoginAction extends ActionSupport implements SessionAware{
 	private static final long serialVersionUID = 1L;
@@ -26,7 +26,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		this.user = user;
 	}
 
-		public String execute() {
+	/*	public String execute() {
 		if ("scott".equals(user.getUser()) && "navy".equals(user.getPassword())) {
 			session.put("loggedUser", user);
 			return "success";					
@@ -34,9 +34,9 @@ public class LoginAction extends ActionSupport implements SessionAware{
 			addActionError("Usuario invalido favor de verificar");
 			return "input";
 		}
-}
+}*/
 	
-/*	public String execute() throws SQLException {
+	public String execute() throws SQLException {
 		String ret = INPUT;
 		
 		UsuarioService usuarioService = new UsuarioService(); 
@@ -44,10 +44,11 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		user = usuarioService.loginUsuario();
 		
 		if (null != user) {
+			session.put("usuario", user);
 			ret = SUCCESS;
 		} else {
 			addActionError("Usuario invalido favor de verificar");
 		}
 		return ret;
-	}*/
+	}
 }
