@@ -20,5 +20,28 @@
 
     </package>
 
+<package name="general" namespace="/" extends="struts-default">
+<!--TODO LO QUE NO SEA LOGIN -->
+	<interceptors>   
+		<interceptor-stack name="newStack">
+			<interceptor-ref name="loginInterceptor"/>
+			<interceptor-ref name="defaultStack" />
+		</interceptor-stack>
+		<interceptor name="loginInterceptor" class="com.interceptors.InterceptorAcceso"></interceptor>
+	</interceptors>
+	
+	<default-interceptor-ref name="newStack">
+
+	</default-interceptor-ref>
+	
+	<global-results>
+		<result name="login">/index.jsp</result>
+	</global-results>
+
+	<action name="menu" class="com.action.MenuAction" method="execute">
+		<result name="success">/WEB-INF/menu.jsp</result>
+	</action>
+</package>
+
     <!-- Add addition packages and configuration here. -->
 </struts>
