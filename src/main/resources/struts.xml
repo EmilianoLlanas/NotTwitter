@@ -18,11 +18,23 @@
             <result name="input">/index.jsp</result>
         </action>
 
-    </package>
+<action name="AltaUsuarioAction" 
+		        class="com.action.users.AltaUsuarioAction"
+		        method="init">
+            <result name="success">/WEB-INF/Users/datosUsuario.jsp</result>
+            <result name="input">/index.jsp</result>
+        </action>
+
+<action name="AltaCompleta" 
+		        class="com.action.users.AltaUsuarioAction"
+		        method="execute">
+            <result name="success">/WEB-INF/menu.jsp</result>
+        </action>
+ </package>
 
 <package name="general" namespace="/" extends="struts-default">
-<!--TODO LO QUE NO SEA LOGIN -->
-	<interceptors>   
+
+<interceptors>   
 		<interceptor-stack name="newStack">
 			<interceptor-ref name="loginInterceptor"/>
 			<interceptor-ref name="defaultStack" />
@@ -44,12 +56,6 @@
             <result name="success">/WEB-INF/menu.jsp</result>
         </action>
 
-<<<<<<< Updated upstream
-	<action name="menu" class="com.action.MenuAction" method="execute">
-		<result name="success">/WEB-INF/menu.jsp</result>
-	</action>
-</package>
-=======
          <action name="Home" 
 		        class="com.action.users.AltaUsuarioAction"
 		        method="init">
@@ -86,7 +92,6 @@
   </package>
 
    
->>>>>>> Stashed changes
 
     <!-- Add addition packages and configuration here. -->
 </struts>

@@ -39,8 +39,6 @@ public class UsuarioService {
 		conexion.closeConnection();
 		return usuario;
 	}
-<<<<<<< Updated upstream
-=======
 	
 	public Usuario altaUsuario() throws SQLException {
 		Conexion conexion = new Conexion();
@@ -64,5 +62,4 @@ public class UsuarioService {
 		
 	}
 	
->>>>>>> Stashed changes
 }
