@@ -25,8 +25,9 @@
 <body style="background-color:#141d26;">
 <div class="container-fluid">
   <div class="row">
+    
     <div class="col-lg-2 col-md-3 col-sm-12 mb-2 control-group">
-    <nav class="navbar bg-dark navbar-dark " >
+    <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark navbar-dark " >
   <a class="navbar-brand" href="#">&nbsp;Home</a>
 
   <button class="navbar-toggler" 
@@ -53,15 +54,27 @@
 	    </li>
 	</ul>
   </div>
+  
 </nav> 	
     </div>
 
 
 			<div class="col-lg-8 col-md-6 col-sm-12 mb-2 control-group" style="color: white">
+				
 				<div class="row">
 					<h1 style="text-align: center;">Inicio</h1>
 				</div>
 				
+				<div class="row">
+				
+					<div class="container">
+						
+							<img src="images/twPP.png" class="img-fluid"  style="width: 50px; height: 50px;">
+							<s:property value="user.user" />
+							<s:property value="user.name" />
+					</div>
+				</div>
+				<br>
 				<div class="row">
 					
 					<div class="form-group">
@@ -72,7 +85,7 @@
 				
 				<div class="row">
 					<div class="btn-group mt-2 col-sm-12 col-md-6 col-lg-4" role="group">
-					<s:submit value="Twittear" cssClass="btn btn-outline-primary"/>
+					<s:submit value="Twittear" cssClass="btn btn-outline-info"/>
 				</div>
 			</div>	
 			</div>

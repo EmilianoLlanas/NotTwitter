@@ -23,7 +23,7 @@ public class UsuarioService {
 		Conexion conexion = new Conexion();
 		Connection conn = conexion.establishConnection().getCon();
 		
-		String sql = "SELECT name FROM tw.user WHERE";
+		String sql = "SELECT id,name,email FROM tw.user WHERE";
 		sql += " user = ? AND password = ?";
 		PreparedStatement ps = conn.prepareStatement(sql);
 		ps.setString(1, usuario.getUser());
@@ -31,10 +31,14 @@ public class UsuarioService {
 		ResultSet rs = ps.executeQuery();
 
 		if (rs.next()) {
-			usuario.setName(rs.getString(1));
+			usuario.setName(rs.getString("name"));
+			usuario.setEmail(rs.getString("email"));
+			usuario.setId(rs.getInt("id"));
 		} else {
 			usuario = null;
 		}
+		
+		
 		
 		conexion.closeConnection();
 		return usuario;
@@ -52,6 +56,9 @@ public class UsuarioService {
 		ps.setString(4, usuario.getEmail());
 		
 		ps.executeUpdate();
+		
+		
+		
 		
 		conexion.closeConnection();
 		return usuario;
