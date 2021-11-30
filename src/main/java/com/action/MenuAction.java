@@ -24,5 +24,3 @@ public class MenuAction implements SessionAware{
 		return "success";
 	}
 }
-
-	

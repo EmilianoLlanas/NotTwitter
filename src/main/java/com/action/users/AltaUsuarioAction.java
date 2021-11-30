@@ -52,6 +52,7 @@ public class AltaUsuarioAction extends ActionSupport implements SessionAware {
 		if (0 == newClientId) {
 			// alta Cliente
 			usuarioService.altaUsuario();
+		
 			addActionMessage("Alta Exitosa");
 			ret = SUCCESS;
 		} else {

@@ -18,6 +18,11 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 	<s:if test="hasActionErrors()">
 		<s:actionerror/>
 	</s:if>
+	
+	<s:if test="hasActionMessages()">
+        <s:actionmessage/>
+	</s:if>
+	
 	<div class="login-form">
 	    <s:form action="login" method="POST">
 	        <div class="avatar"><i class="material-icons">&#xE7FF;</i></div> 
