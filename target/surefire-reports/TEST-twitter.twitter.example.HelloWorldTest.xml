@@ -1,65 +1,248 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="twitter.twitter.example.HelloWorldTest" time="0.063" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="twitter.twitter.example.HelloWorldTest" time="0.037" errors="1" skipped="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.3+12-LTS"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.3\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Emiliano (Trabajo)\eclipse-workspace\twitter"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="16.0.2+7-67"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
     <property name="user.country" value="MX"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Emiliano (Trabajo)\eclipse-workspace\twitter"/>
+    <property name="user.dir" value="C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="11.0.3+12-LTS"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.runtime.version" value="16.0.2+7-67"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\EMILIA~1\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\mawix\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Emiliano (Trabajo)\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8611448201115209406.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\mawix\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf17773385721016239873.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.3\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.3/bin/server;C:/Program Files/Java/jdk-11.0.3/bin;C:\Users\Emiliano\Downloads\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2019b\bin;C:\Program Files\Git\cmd;C:\Users\Emiliano (Trabajo)\Downloads\apache-maven-3.8.4\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corpo;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Emiliano (Trabajo)\Downloads\apache-tomcat-9.0.55\bin;C:\Program Files\swipl\bin;C:\Users\Emiliano (Trabajo)\AppData\Local\Microsoft\WindowsApps;;C:\Users\Emiliano (Trabajo)\Desktop;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk-16.0.2/bin/server;C:/Program Files/Java/jdk-16.0.2/bin;C:\Program Files\Java\jdk-16.0.2\bin;C:\Program Files\Java\jdk-16.0.2;C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\apache-tomcat-9.0.52\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\mawix\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\mawix\AppData\Local\Programs\Python\Python39\;C:\Users\mawix\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\bin;C:\Users\mawix\AppData\Local\GitHubDesktop\bin;C:\Users\mawix\AppData\Local\atom\bin;C:\Program Files\swipl\bin;C:\Windows\System32;;."/>
     <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="55.0"/>
+    <property name="java.class.version" value="60.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\Emiliano (Trabajo)"/>
+    <property name="user.home" value="C:\Users\mawix"/>
     <property name="user.timezone" value="America/Mexico_City"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="user.name" value="Emiliano (Trabajo)"/>
-    <property name="java.class.path" value="C:\Users\Emiliano (Trabajo)\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.0.20210618-2246\jars\plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="11"/>
+    <property name="java.specification.version" value="16"/>
+    <property name="user.name" value="mawix"/>
+    <property name="java.class.path" value="C:\Users\mawix\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.0.20210603-1206\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.3"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-16.0.2"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="11.0.3"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="16.0.2"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\Emiliano (Trabajo)\eclipse-workspace\twitter\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\EMBEDDED"/>
     <property name="file.separator" value="\"/>
-    <property name="java.version.date" value="2019-04-16"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="java.vendor.version" value="18.9"/>
-    <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="twitter.twitter.example.HelloWorldTest" name="testHelloWorld" time="0.063"/>
+  <testcase classname="twitter.twitter.example.HelloWorldTest" name="testHelloWorld" time="0.037">
+    <error type="Unable">Unable to load configuration. - file:/C:/Users/mawix/Documents/AGO_DIC2021/APPS%20WEB/ProyectoFinal/NotTwitter/target/classes/struts.xml:71:10
+	at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:509)
+	at org.apache.struts2.util.StrutsTestCaseHelper.initDispatcher(StrutsTestCaseHelper.java:44)
+	at org.apache.struts2.StrutsTestCase.initDispatcher(StrutsTestCase.java:236)
+	at org.apache.struts2.StrutsTestCase.setUp(StrutsTestCase.java:216)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: Unable to load configuration. - file:/C:/Users/mawix/Documents/AGO_DIC2021/APPS%20WEB/ProyectoFinal/NotTwitter/target/classes/struts.xml:71:10
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:69)
+	at org.apache.struts2.dispatcher.Dispatcher.getContainer(Dispatcher.java:959)
+	at org.apache.struts2.dispatcher.Dispatcher.init_PreloadConfiguration(Dispatcher.java:463)
+	at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:496)
+	... 23 more
+Caused by: Unable to load file:/C:/Users/mawix/Documents/AGO_DIC2021/APPS%20WEB/ProyectoFinal/NotTwitter/target/classes/struts.xml - file:/C:/Users/mawix/Documents/AGO_DIC2021/APPS%20WEB/ProyectoFinal/NotTwitter/target/classes/struts.xml:71:10
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1087)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadDocuments(XmlConfigurationProvider.java:198)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.init(XmlConfigurationProvider.java:165)
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:166)
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:66)
+	... 26 more
+Caused by: The content of element type &quot;struts&quot; must match &quot;((package|include|bean|constant)*,unknown-handler-stack?)&quot;. - file:/C:/Users/mawix/Documents/AGO_DIC2021/APPS%20WEB/ProyectoFinal/NotTwitter/target/classes/struts.xml:71:10
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:120)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1081)
+	... 30 more
+Caused by: org.xml.sax.SAXParseException; systemId: file:/C:/Users/mawix/Documents/AGO_DIC2021/APPS%20WEB/ProyectoFinal/NotTwitter/target/classes/struts.xml; lineNumber: 71; columnNumber: 10; The content of element type &quot;struts&quot; must match &quot;((package|include|bean|constant)*,unknown-handler-stack?)&quot;.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1923)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:865)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1727)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2898)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:118)
+	... 31 more
+</error>
+    <system-out>2021-11-29 19:38:13,643 ERROR [main] util.DomHelper$StartHandler (DomHelper.java:366) - The content of element type &quot;struts&quot; must match &quot;((package|include|bean|constant)*,unknown-handler-stack?)&quot;. at (null:71:10)
+org.xml.sax.SAXParseException: The content of element type &quot;struts&quot; must match &quot;((package|include|bean|constant)*,unknown-handler-stack?)&quot;.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1923) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:865) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1727) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2898) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) [?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541) [?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888) [?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) [?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) [?:?]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224) [?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635) [?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324) [?:?]
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:118) [struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1081) [struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadDocuments(XmlConfigurationProvider.java:198) [struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.init(XmlConfigurationProvider.java:165) [struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:166) [struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:66) [struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.dispatcher.Dispatcher.getContainer(Dispatcher.java:959) [struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.dispatcher.Dispatcher.init_PreloadConfiguration(Dispatcher.java:463) [struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:496) [struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.util.StrutsTestCaseHelper.initDispatcher(StrutsTestCaseHelper.java:44) [struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.StrutsTestCase.initDispatcher(StrutsTestCase.java:236) [struts2-junit-plugin-2.5.22.jar:2.5.22]
+	at org.apache.struts2.StrutsTestCase.setUp(StrutsTestCase.java:216) [struts2-junit-plugin-2.5.22.jar:2.5.22]
+	at junit.framework.TestCase.runBare(TestCase.java:139) [junit-4.12.jar:4.12]
+	at junit.framework.TestResult$1.protect(TestResult.java:122) [junit-4.12.jar:4.12]
+	at junit.framework.TestResult.runProtected(TestResult.java:142) [junit-4.12.jar:4.12]
+	at junit.framework.TestResult.run(TestResult.java:125) [junit-4.12.jar:4.12]
+	at junit.framework.TestCase.run(TestCase.java:129) [junit-4.12.jar:4.12]
+	at junit.framework.TestSuite.runTest(TestSuite.java:252) [junit-4.12.jar:4.12]
+	at junit.framework.TestSuite.run(TestSuite.java:247) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+2021-11-29 19:38:13,644 ERROR [main] dispatcher.Dispatcher (Dispatcher.java:508) - Dispatcher initialization failed
+com.opensymphony.xwork2.config.ConfigurationException: Unable to load configuration.
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:69) ~[struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.dispatcher.Dispatcher.getContainer(Dispatcher.java:959) ~[struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.dispatcher.Dispatcher.init_PreloadConfiguration(Dispatcher.java:463) ~[struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:496) [struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.util.StrutsTestCaseHelper.initDispatcher(StrutsTestCaseHelper.java:44) [struts2-core-2.5.22.jar:2.5.22]
+	at org.apache.struts2.StrutsTestCase.initDispatcher(StrutsTestCase.java:236) [struts2-junit-plugin-2.5.22.jar:2.5.22]
+	at org.apache.struts2.StrutsTestCase.setUp(StrutsTestCase.java:216) [struts2-junit-plugin-2.5.22.jar:2.5.22]
+	at junit.framework.TestCase.runBare(TestCase.java:139) [junit-4.12.jar:4.12]
+	at junit.framework.TestResult$1.protect(TestResult.java:122) [junit-4.12.jar:4.12]
+	at junit.framework.TestResult.runProtected(TestResult.java:142) [junit-4.12.jar:4.12]
+	at junit.framework.TestResult.run(TestResult.java:125) [junit-4.12.jar:4.12]
+	at junit.framework.TestCase.run(TestCase.java:129) [junit-4.12.jar:4.12]
+	at junit.framework.TestSuite.runTest(TestSuite.java:252) [junit-4.12.jar:4.12]
+	at junit.framework.TestSuite.run(TestSuite.java:247) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: com.opensymphony.xwork2.config.ConfigurationException: Unable to load file:/C:/Users/mawix/Documents/AGO_DIC2021/APPS%20WEB/ProyectoFinal/NotTwitter/target/classes/struts.xml
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1087) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadDocuments(XmlConfigurationProvider.java:198) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.init(XmlConfigurationProvider.java:165) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:166) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:66) ~[struts2-core-2.5.22.jar:2.5.22]
+	... 26 more
+Caused by: com.opensymphony.xwork2.XWorkException
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:120) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1081) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadDocuments(XmlConfigurationProvider.java:198) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.init(XmlConfigurationProvider.java:165) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:166) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:66) ~[struts2-core-2.5.22.jar:2.5.22]
+	... 26 more
+Caused by: org.xml.sax.SAXParseException: The content of element type &quot;struts&quot; must match &quot;((package|include|bean|constant)*,unknown-handler-stack?)&quot;.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1923) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:865) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1727) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2898) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324) ~[?:?]
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:118) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1081) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadDocuments(XmlConfigurationProvider.java:198) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.init(XmlConfigurationProvider.java:165) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:166) ~[struts2-core-2.5.22.jar:2.5.22]
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:66) ~[struts2-core-2.5.22.jar:2.5.22]
+	... 26 more
+</system-out>
+  </testcase>
 </testsuite>

@@ -25,7 +25,7 @@
 <body style="background-color:#141d26;">
 <div class="container-fluid">
   <div class="row">
-    <div class="col">
+    <div class="col-lg-2 col-md-3 col-sm-12 mb-2 control-group">
     <nav class="navbar bg-dark navbar-dark " >
   <a class="navbar-brand" href="#">&nbsp;Home</a>
 
@@ -55,12 +55,32 @@
   </div>
 </nav> 	
     </div>
-    
-    <div class="col" style="color: white">
-    <h1 style="text-align: center;">Inicio</h1>
-    </div>
-    
-    <div class="col" style="color: white">
+
+
+			<div class="col-lg-8 col-md-6 col-sm-12 mb-2 control-group" style="color: white">
+				<div class="row">
+					<h1 style="text-align: center;">Inicio</h1>
+				</div>
+				
+				<div class="row">
+					
+					<div class="form-group">
+						
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</div>	
+				
+				<div class="row">
+					<div class="btn-group mt-2 col-sm-12 col-md-6 col-lg-4" role="group">
+					<s:submit value="Twittear" cssClass="btn btn-outline-primary"/>
+				</div>
+			</div>	
+			</div>
+
+	
+	
+	
+	<div class="col-lg-2 col-md-3  col-sm-12 mb-2 control-group" style="color: white">
      <p style="text-align: center;">Publicidad</p>
      <img src="images/imagen4.png" class="img-fluid" alt="Responsive image">
      <img src="images/imagen3.png" class="img-fluid" alt="Responsive image">

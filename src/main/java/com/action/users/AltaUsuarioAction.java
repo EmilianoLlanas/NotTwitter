@@ -56,8 +56,6 @@ public class AltaUsuarioAction extends ActionSupport implements SessionAware {
 			ret = SUCCESS;
 		} else {
 			// editar Cliente
-			usuarioService.editarUsuario();
-			addActionMessage("Edición Exitosa");
 			ret = SUCCESS;
 		}
 
