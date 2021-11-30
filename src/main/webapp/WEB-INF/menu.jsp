@@ -43,7 +43,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
 	<ul class="navbar-nav">
 	    <li class="nav-item">
-			<s:url var="adminCtes" action="consultarPerfil">
+			<s:url var="adminCtes" action="consultar">
 			</s:url>
 			<s:a href="%{adminCtes}" cssClass="nav-link">Mi Perfil</s:a>
 	    </li>
