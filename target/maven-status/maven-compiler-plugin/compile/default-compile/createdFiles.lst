@@ -6,5 +6,12 @@ twitter\twitter\example\ExampleSupport.class
 com\utils\Conexion.class
 com\service\UsuarioService.class
 com\action\MenuAction.class
+<<<<<<< Updated upstream
 com\utils\Validations.class
 twitter\twitter\example\HelloWorld.class
+=======
+com\interceptors\InterceptorAcceso.class
+com\utils\Validations.class
+twitter\twitter\example\HelloWorld.class
+com\action\users\AltaUsuarioAction.class
+>>>>>>> Stashed changes

@@ -1,4 +1,8 @@
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\MenuAction.java
+<<<<<<< Updated upstream
+=======
+C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\users\AltaUsuarioAction.java
+>>>>>>> Stashed changes
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\LogoutAction.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\utils\Validations.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\twitter\twitter\example\ExampleSupport.java
@@ -7,4 +11,8 @@ C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\twitter\twitter\example\Login.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\utils\Conexion.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\service\UsuarioService.java
+<<<<<<< Updated upstream
+=======
+C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\interceptors\InterceptorAcceso.java
+>>>>>>> Stashed changes
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\LoginAction.java
