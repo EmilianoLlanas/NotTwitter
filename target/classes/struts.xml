@@ -69,11 +69,11 @@
 		<result name="success">/WEB-INF/Users/perfilUsuario.jsp</result>
 	</action>
 
-	<!--> <action name="Profile" class="com.action.users.EditarUsuarioAction" 
-		method="init"> <result name="success">/WEB-INF/clientes/perfilUsuario.jsp</result> 
-		<result name="input">/WEB-INF/clientes/perfilUsuario.jsp</result> </action> 
-		<action name="editarPerfil" class="com.action.users.EditarUsuarioAction" 
-		method="execute"> <result name="success" type="redirect">consultar</result> 
+	<!--> <action name="Profile" class="com.action.users.EditarUsuarioAction"
+		method="init"> <result name="success">/WEB-INF/clientes/perfilUsuario.jsp</result>
+		<result name="input">/WEB-INF/clientes/perfilUsuario.jsp</result> </action>
+		<action name="editarPerfil" class="com.action.users.EditarUsuarioAction"
+		method="execute"> <result name="success" type="redirect">consultar</result>
 		<result name="input">/WEB-INF/clientes/perfilUsuario.jsp</result> </action> -->
 
 	<action name="logout" class="com.action.LogoutAction"
@@ -83,7 +83,7 @@
 
 
 </package>
-  
+
   <package name="ajax" namespace="/" extends="json-default">
 	<interceptors>
 		<interceptor-stack name="defaultStack">
@@ -92,17 +92,17 @@
 			</interceptor-ref>
 		</interceptor-stack>
 	</interceptors>
-	
+
 	<action name="altaTweet"
 		class="com.action.tweet.AltaTweetAction" method="execute">
 		<result name="success" type="json" />
-		
-	</action>
-	
 
-        
+	</action>
+
+
+
 </package>
-   
+
 
     <!-- Add addition packages and configuration here. -->
 </struts>

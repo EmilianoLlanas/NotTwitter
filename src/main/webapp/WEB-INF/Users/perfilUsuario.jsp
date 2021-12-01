@@ -60,7 +60,7 @@
     </div>
 
 
-			<div class="col-lg-8 col-md-6 col-sm-12 mb-2 control-group" style="color: white">
+	<div class="col-lg-8 col-md-6 col-sm-12 mb-2 control-group" style="color: white">
 				
 				<div class="row">
 					<div align="center" style="color: white">
@@ -74,14 +74,13 @@
 					    <s:property value="user.email" />
 					    <h6  style="margin-top: 20px;">Password</h6>
 					    <s:property value="user.password" />
+					    <br>
+					    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" 
+					    data-bs-target="#editarUsuarioModal" style="margin-top: 10px">Editar</button>
 				    </div>
 				</div>
 				
-				
 			</div>
-
-	
-	
 	
 	<div class="col-lg-2 col-md-3  col-sm-12 mb-2 control-group" style="color: white">
      <p style="text-align: center;">Publicidad</p>
@@ -94,6 +93,20 @@
    
   </div>
   </div>
+  
+  <div class="modal fade" id="editarUsuarioModal" tabindex="-1"
+aria-labelledby="modalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header bg-info text-white">
+				<h5 class="modal-title" id="modalLabel">Editar</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-
+				label="Close"></button>
+			</div>
+			<div class="modal-body">  <%@include file="./editarUsuario.jsp"%></div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
