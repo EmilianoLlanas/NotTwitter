@@ -28,7 +28,9 @@
     
     <div class="col-lg-2 col-md-3 col-sm-12 mb-2 control-group">
     <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark navbar-dark " >
-  <a class="navbar-brand" href="#">&nbsp;Home</a>
+    <s:url var="menu" action="menu">
+			</s:url>
+  <s:a href="%{menu}" class="navbar-brand">&nbsp;Twitter</s:a>
 
   <button class="navbar-toggler" 
           type="button" 
@@ -70,7 +72,7 @@
 					<div class="container">
 						
 							<img src="images/twPP.png" class="img-fluid"  style="width: 50px; height: 50px;">
-							<s:property value="user.user" />
+							@<s:property value="user.user" />
 							<s:property value="user.name" />
 					</div>
 				</div>

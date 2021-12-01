@@ -25,9 +25,10 @@
 <body style="background-color:#141d26;">
 <div class="container-fluid">
   <div class="row">
-    <div class="col-3">
-    <nav class="navbar bg-dark navbar-dark " >
-  <a class="navbar-brand" href="#">&nbsp;Home</a>
+    
+    <div class="col-lg-2 col-md-3 col-sm-12 mb-2 control-group">
+    <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark navbar-dark " >
+  <a class="navbar-brand">&nbsp;Twitter</a>
 
   <button class="navbar-toggler" 
           type="button" 
@@ -41,33 +42,49 @@
   
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
 	<ul class="navbar-nav">
-	    <li class="nav-item">
+	<li class="nav-item">
 	    
 			<s:url var="menu" action="menu">
 			</s:url>
-			<s:a href="%{menu}" cssClass="nav-link" style="padding: 10px;">Home</s:a>
+			<s:a href="%{menu}" cssClass="nav-link">Home</s:a>
 	    </li>
 	     <li class="nav-item">
 	        <s:url var="salir" action="logout">
 	        </s:url>
-	        <s:a href="%{salir}" cssClass="nav-link" style="padding: 10px;">Salir</s:a>
+	        <s:a href="%{salir}" cssClass="nav-link">Salir</s:a>
 	    </li>
 	</ul>
   </div>
+  
 </nav> 	
     </div>
-    
-    <div class="col-6" align="center" style="color: white">
-    <h1 style="text-align: center;">Mi perfil</h1>
-    <img src="images/imagenperfil.png" class="img-fluid" alt="Responsive image" style="margin-top: 10px; height: 100px;">
-    <h6  style="margin-top: 30px;">Nombre de usuario</h6>
-    <h6  style="margin-top: 20px;">Usuario / Username</h6>
-    <h6  style="margin-top: 20px;">Email</h6>
-    <h6  style="margin-top: 20px;">Password</h6>
-    </div>
-    
-    <div class="col-3" style="color: white">
-     <h4 style="text-align: center;">Publicidad</h4>
+
+
+			<div class="col-lg-8 col-md-6 col-sm-12 mb-2 control-group" style="color: white">
+				
+				<div class="row">
+					<div align="center" style="color: white">
+					    <h1 style="text-align: center;">Mi perfil</h1>
+					    <img src="images/twPP.png" class="img-fluid" alt="Responsive image" style="margin-top: 10px; height: 100px;">
+					    <h6  style="margin-top: 30px;">Nombre</h6>
+					    <s:property value="user.name" />
+					    <h6  style="margin-top: 20px;">Usuario / Username</h6>
+					    @<s:property value="user.user" />
+					    <h6  style="margin-top: 20px;">Email</h6>
+					    <s:property value="user.email" />
+					    <h6  style="margin-top: 20px;">Password</h6>
+					    <s:property value="user.password" />
+				    </div>
+				</div>
+				
+				
+			</div>
+
+	
+	
+	
+	<div class="col-lg-2 col-md-3  col-sm-12 mb-2 control-group" style="color: white">
+     <p style="text-align: center;">Publicidad</p>
      <img src="images/imagen4.png" class="img-fluid" alt="Responsive image">
      <img src="images/imagen3.png" class="img-fluid" alt="Responsive image">
      <img src="images/imagen2.png" class="img-fluid" alt="Responsive image">
@@ -80,3 +97,6 @@
 
 </body>
 </html>
+
+    
+    <!--  -->

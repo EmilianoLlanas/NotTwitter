@@ -57,9 +57,6 @@ public class UsuarioService {
 		
 		ps.executeUpdate();
 		
-		
-		
-		
 		conexion.closeConnection();
 		return usuario;
 	}
