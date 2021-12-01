@@ -75,11 +75,12 @@
 					<div class="container">
 						
 							<img src="images/twPP.png" class="img-fluid"  style="width: 50px; height: 50px;">
-							<s:property value="user.user" />
-							@<s:property value="user.name" />
+							@<s:property value="user.user" />
+							<s:property value="user.name" />
 					</div>
 				</div>
 				<br>
+				
 
 				<s:form action="" method="POST" id="formulario">
 				<s:hidden name="user.id" id="id"></s:hidden>
@@ -98,6 +99,10 @@
 							
 							<s:submit value="Twittear" href="%{user.id}" cssClass="btn btn-outline-info" id="btnEnviar" />
 						</div>
+					</div>
+					<br>
+					<div class="container" id="tweetss">
+						
 					</div>
 				</s:form>
 			</div>

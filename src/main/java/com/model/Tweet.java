@@ -1,12 +1,19 @@
 package com.model;
 
 public class Tweet {
+	private int id;
 	private int user_id;
 	private int reply_id;
 	private String tweet;
 	private String userN;
 	
 	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getUserN() {
 		return userN;
 	}

@@ -2,6 +2,7 @@ com\action\LoginAction.class
 com\service\TweetService.class
 com\action\LogoutAction.class
 com\model\Tweet.class
+com\action\tweet\ConsultarTweetsAction.class
 com\model\Usuario.class
 com\action\tweet\AltaTweetAction.class
 com\utils\Conexion.class
@@ -10,4 +11,5 @@ com\action\users\ConsultarPerfilAction.class
 com\action\MenuAction.class
 com\interceptors\InterceptorAcceso.class
 com\utils\Validations.class
+com\action\users\EditarUsuarioAction.class
 com\action\users\AltaUsuarioAction.class

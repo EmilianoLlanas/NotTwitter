@@ -41,7 +41,7 @@ public class TweetService {
 	  Conexion conexion =new Conexion(); 
 	  Connection conn = conexion.establishConnection().getCon();
 	  
-	  String sql ="SELECT userN,tweet FROM tweet;";
+	  String sql ="SELECT userN,tweet,id FROM tweet ORDER BY id DESC;";
 	  PreparedStatement ps = conn.prepareStatement(sql); 
 	  ResultSet rs =ps.executeQuery();
 	  
@@ -52,6 +52,7 @@ public class TweetService {
 		
 			tweet.setUserN(rs.getString(1));
 			tweet.setTweet(rs.getString(2));
+			tweet.setId(rs.getInt(3));
 			
 			tweets.add(tweet);
 			
@@ -60,5 +61,20 @@ public class TweetService {
 	  return tweets;
 	  
 	  }
+	
+	public void bajaTwitt() throws SQLException
+	{
+		Conexion conexion = new Conexion();
+		Connection conn = conexion.establishConnection().getCon();
+
+		String sql = "DELETE FROM tweet WHERE id=?";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setInt(1, tweet.getId());
+		
+		ps.executeUpdate();
+		
+		conexion.closeConnection();
+		
+	}
 	 
 }

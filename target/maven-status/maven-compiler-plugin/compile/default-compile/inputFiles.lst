@@ -1,10 +1,12 @@
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\service\TweetService.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\MenuAction.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\users\AltaUsuarioAction.java
+C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\users\EditarUsuarioAction.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\LogoutAction.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\users\ConsultarPerfilAction.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\utils\Conexion.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\service\UsuarioService.java
+C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\tweet\ConsultarTweetsAction.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\model\Tweet.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\action\tweet\AltaTweetAction.java
 C:\Users\mawix\Documents\AGO_DIC2021\APPS WEB\ProyectoFinal\NotTwitter\src\main\java\com\utils\Validations.java
