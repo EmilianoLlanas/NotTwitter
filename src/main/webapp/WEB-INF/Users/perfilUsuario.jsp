@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Menu</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+<meta charset="ISO-8859-1">
+<title>Mi perfil</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
 	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -28,9 +28,7 @@
     
     <div class="col-lg-2 col-md-3 col-sm-12 mb-2 control-group">
     <nav class="navbar navbar-expand-lg navbar-expand-md bg-dark navbar-dark " >
-    <s:url var="menu" action="menu">
-			</s:url>
-  <s:a href="%{menu}" class="navbar-brand">&nbsp;Twitter</s:a>
+  <a class="navbar-brand">&nbsp;Twitter</a>
 
   <button class="navbar-toggler" 
           type="button" 
@@ -44,10 +42,11 @@
   
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
 	<ul class="navbar-nav">
-	    <li class="nav-item">
-			<s:url var="adminCtes" action="consultarPerfil">
+	<li class="nav-item">
+	    
+			<s:url var="menu" action="menu">
 			</s:url>
-			<s:a href="%{adminCtes}" cssClass="nav-link">Mi Perfil</s:a>
+			<s:a href="%{menu}" cssClass="nav-link">Home</s:a>
 	    </li>
 	     <li class="nav-item">
 	        <s:url var="salir" action="logout">
@@ -64,32 +63,21 @@
 			<div class="col-lg-8 col-md-6 col-sm-12 mb-2 control-group" style="color: white">
 				
 				<div class="row">
-					<h1 style="text-align: center;">Inicio</h1>
+					<div align="center" style="color: white">
+					    <h1 style="text-align: center;">Mi perfil</h1>
+					    <img src="images/twPP.png" class="img-fluid" alt="Responsive image" style="margin-top: 10px; height: 100px;">
+					    <h6  style="margin-top: 30px;">Nombre</h6>
+					    <s:property value="user.name" />
+					    <h6  style="margin-top: 20px;">Usuario / Username</h6>
+					    @<s:property value="user.user" />
+					    <h6  style="margin-top: 20px;">Email</h6>
+					    <s:property value="user.email" />
+					    <h6  style="margin-top: 20px;">Password</h6>
+					    <s:property value="user.password" />
+				    </div>
 				</div>
 				
-				<div class="row">
 				
-					<div class="container">
-						
-							<img src="images/twPP.png" class="img-fluid"  style="width: 50px; height: 50px;">
-							@<s:property value="user.user" />
-							<s:property value="user.name" />
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					
-					<div class="form-group">
-						
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-					</div>
-				</div>	
-				
-				<div class="row">
-					<div class="btn-group mt-2 col-sm-12 col-md-6 col-lg-4" role="group">
-					<s:submit value="Twittear" cssClass="btn btn-outline-info"/>
-				</div>
-			</div>	
 			</div>
 
 	
@@ -109,3 +97,6 @@
 
 </body>
 </html>
+
+    
+    <!--  -->

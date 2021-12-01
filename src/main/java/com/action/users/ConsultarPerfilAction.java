@@ -1,14 +1,14 @@
-package com.action;
+package com.action.users;
 
+import java.util.List;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.model.Usuario;
 import com.opensymphony.xwork2.ActionSupport;
-import com.service.UsuarioService;
 
-public class MenuAction  extends ActionSupport implements SessionAware{
+public class ConsultarPerfilAction extends ActionSupport implements SessionAware {
 	private static final long serialVersionUID = 1L;
 	private Usuario user;
 	private Map<String, Object> session;
@@ -16,8 +16,9 @@ public class MenuAction  extends ActionSupport implements SessionAware{
 	@Override
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
+		
 	}
-	
+
 	public Usuario getUser() {
 		return user;
 	}
@@ -26,6 +27,10 @@ public class MenuAction  extends ActionSupport implements SessionAware{
 		this.user = user;
 	}
 	
+	
+	public String init() {
+		return "success";
+	}
 	
 	public String execute() {
 		user = (Usuario) session.get("usuario");

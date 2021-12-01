@@ -57,11 +57,13 @@ public class UsuarioService {
 		
 		ps.executeUpdate();
 		
-		
-		
-		
 		conexion.closeConnection();
 		return usuario;
+	}
+	
+	public Usuario editarUsuario() {
+		return usuario;
+		
 	}
 	
 }
