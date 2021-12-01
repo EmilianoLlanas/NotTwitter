@@ -64,17 +64,19 @@
 		<result name="success">index.jsp</result>
 	</action>
 
-	<action name="consultarPerfil"
-		class="com.action.users.ConsultarPerfilAction" method="execute">
-		<result name="success">/WEB-INF/Users/perfilUsuario.jsp</result>
-	</action>
+  <action name="consultarPerfil"
+  		        class="com.action.users.ConsultarPerfilAction"
+  		        method="execute">
+              <result name="success">/WEB-INF/Users/perfilUsuario.jsp</result>
+          </action>
 
-	<!--> <action name="Profile" class="com.action.users.EditarUsuarioAction"
-		method="init"> <result name="success">/WEB-INF/clientes/perfilUsuario.jsp</result>
-		<result name="input">/WEB-INF/clientes/perfilUsuario.jsp</result> </action>
-		<action name="editarPerfil" class="com.action.users.EditarUsuarioAction"
-		method="execute"> <result name="success" type="redirect">consultar</result>
-		<result name="input">/WEB-INF/clientes/perfilUsuario.jsp</result> </action> -->
+
+ 		<action name="editarUsuario"
+  		        class="com.action.users.EditarUsuarioAction"
+  		        method="execute">
+              <result name="success" type="redirect">consultarPerfil</result>
+              <result name="input">/WEB-INF/Users/editarUsuario.jsp</result>
+          </action>
 
 	<action name="logout" class="com.action.LogoutAction"
 		method="execute">

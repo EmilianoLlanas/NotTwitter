@@ -9,12 +9,14 @@ $(document).ready(function() {
 			var user_id = $('#id');
 			var reply_id = $('#reply_id');
 			var tweet = $('#tweet');
+			var userN=$('#user');
 			
 			var tweet = {
 				"tweet": {
 					"user_id": user_id.val(),
 					"reply_id": reply_id.val(),
 					"tweet": tweet.val(),
+					"userN": userN.val(),
 				}
 			};
 	

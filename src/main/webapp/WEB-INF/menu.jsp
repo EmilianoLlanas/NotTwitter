@@ -83,6 +83,7 @@
 
 				<s:form action="" method="POST" id="formulario">
 				<s:hidden name="user.id" id="id"></s:hidden>
+				<s:hidden name="user.user" id="user"></s:hidden>
 				<div class="row">
 
 						<div class="form-group">

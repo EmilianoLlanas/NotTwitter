@@ -71,7 +71,7 @@
           </action>
 
 
-  <action name="editarUsuario"
+ 		<action name="editarUsuario"
   		        class="com.action.users.EditarUsuarioAction"
   		        method="execute">
               <result name="success" type="redirect">consultarPerfil</result>

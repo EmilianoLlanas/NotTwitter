@@ -4,7 +4,15 @@ public class Tweet {
 	private int user_id;
 	private int reply_id;
 	private String tweet;
+	private String userN;
 	
+	
+	public String getUserN() {
+		return userN;
+	}
+	public void setUserN(String userN) {
+		this.userN = userN;
+	}
 	public int getUser_id() {
 		return user_id;
 	}
