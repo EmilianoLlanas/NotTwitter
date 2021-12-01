@@ -1,12 +1,13 @@
 com\action\LoginAction.class
+com\service\TweetService.class
 com\action\LogoutAction.class
+com\model\Tweet.class
 com\model\Usuario.class
-twitter\twitter\example\Login.class
-twitter\twitter\example\ExampleSupport.class
+com\action\tweet\AltaTweetAction.class
 com\utils\Conexion.class
 com\service\UsuarioService.class
+com\action\users\ConsultarPerfilAction.class
 com\action\MenuAction.class
 com\interceptors\InterceptorAcceso.class
 com\utils\Validations.class
-twitter\twitter\example\HelloWorld.class
 com\action\users\AltaUsuarioAction.class

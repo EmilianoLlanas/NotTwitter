@@ -21,6 +21,9 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+    
+    <link href="styles/validation.css" rel="stylesheet">
+	<script src="scripts/adminTweet.js"> </script>
 </head>
 <body style="background-color:#141d26;">
 <div class="container-fluid">
@@ -72,24 +75,30 @@
 					<div class="container">
 						
 							<img src="images/twPP.png" class="img-fluid"  style="width: 50px; height: 50px;">
-							@<s:property value="user.user" />
-							<s:property value="user.name" />
+							<s:property value="user.user" />
+							@<s:property value="user.name" />
 					</div>
 				</div>
 				<br>
+
+				<s:form action="" method="POST" id="formulario">
+				<s:hidden name="user.id" id="id"></s:hidden>
 				<div class="row">
-					
-					<div class="form-group">
-						
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+						<div class="form-group">
+
+							<textarea name="tweet.tweet" id="tweet" class="form-control" rows="3"></textarea>
+						</div>
 					</div>
-				</div>	
-				
-				<div class="row">
-					<div class="btn-group mt-2 col-sm-12 col-md-6 col-lg-4" role="group">
-					<s:submit value="Twittear" cssClass="btn btn-outline-info"/>
-				</div>
-			</div>	
+
+					<div class="row">
+						<div class="btn-group mt-2 col-sm-12 col-md-6 col-lg-4"
+							role="group">
+							
+							<s:submit value="Twittear" href="%{user.id}" cssClass="btn btn-outline-info" id="btnEnviar" />
+						</div>
+					</div>
+				</s:form>
 			</div>
 
 	

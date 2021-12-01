@@ -25,6 +25,7 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 	
 	<div class="login-form">
 	    <s:form action="login" method="POST">
+	    
 	        <div class="avatar"><i class="material-icons">&#xE7FF;</i></div> 
 	        <h2 class="text-center">Sign in</h2>
 	        <div class="form-group">

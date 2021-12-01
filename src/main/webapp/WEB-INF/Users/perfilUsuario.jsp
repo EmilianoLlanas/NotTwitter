@@ -67,9 +67,9 @@
 					    <h1 style="text-align: center;">Mi perfil</h1>
 					    <img src="images/twPP.png" class="img-fluid" alt="Responsive image" style="margin-top: 10px; height: 100px;">
 					    <h6  style="margin-top: 30px;">Nombre</h6>
-					    <s:property value="user.name" />
+					    @<s:property value="user.name" />
 					    <h6  style="margin-top: 20px;">Usuario / Username</h6>
-					    @<s:property value="user.user" />
+					    <s:property value="user.user" />
 					    <h6  style="margin-top: 20px;">Email</h6>
 					    <s:property value="user.email" />
 					    <h6  style="margin-top: 20px;">Password</h6>

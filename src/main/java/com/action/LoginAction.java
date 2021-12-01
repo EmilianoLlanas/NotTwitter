@@ -33,7 +33,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		UsuarioService usuarioService = new UsuarioService(); 
 		usuarioService.setUsuario(user); 
 		user = usuarioService.loginUsuario();
-		
+		System.out.println("user id:"+user.getId());
 		if (null != user) {
 			session.put("usuario", user);
 			ret = SUCCESS;
