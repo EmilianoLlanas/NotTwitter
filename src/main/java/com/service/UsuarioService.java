@@ -61,7 +61,20 @@ public class UsuarioService {
 		return usuario;
 	}
 	
-	public Usuario editarUsuario() {
+	public Usuario editarUsuario() throws SQLException{
+		Conexion conexion = new Conexion();
+		Connection conn = conexion.establishConnection().getCon();
+		
+		String sql = "UPDATE user SET name=?, password=? WHERE id=?";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setString(1, usuario.getName());
+		ps.setString(2, usuario.getPassword());
+		ps.setInt(3, usuario.getId());
+		
+		ps.executeUpdate();
+		
+		conexion.closeConnection();
+		System.out.println(usuario.getName());
 		return usuario;
 		
 	}

@@ -72,6 +72,15 @@
             <result name="success">/WEB-INF/Users/perfilUsuario.jsp</result>
         </action>
 
+
+<action name="editarUsuario" 
+		        class="com.action.users.EditarUsuarioAction"
+		        method="execute">
+            <result name="success" type="redirect">consultarPerfil</result>
+            <result name="input">/WEB-INF/Users/editarUsuario.jsp</result>
+        </action>
+
+
        <!--> <action name="Profile" 
 		        class="com.action.users.EditarUsuarioAction"
 		        method="init">
@@ -94,6 +103,28 @@
 
 
   </package>
+
+<!--<>package name="ajax" namespace="/" extends="json-default">
+        <interceptors> 
+          <interceptor-stack name="defaultStack"> 
+            <interceptor-ref name="json"> 
+              <param name="enableSMD">true</param> 
+            </interceptor-ref> 
+          </interceptor-stack> 
+        </interceptors>
+
+	<action name="initAjax" 
+	        class="com.action.ajax.JqueryAJAXAction"
+	        method="init">
+	            <result name="success">/WEB-INF/ajax/names.jsp</result>
+	        </action>
+        
+        <action name="jqueryAJAXAction" 
+                class="com.action.ajax.JqueryAJAXAction">
+          <result name="success" type="json"/>
+        </action>
+</package>-->
+
    
 
     <!-- Add addition packages and configuration here. -->
